@@ -15,6 +15,8 @@ TARGET = rlec
 TEST1 = test-compress
 TEST2 = test-decompress
 
+all: $(TARGET) $(TEST1) $(TEST2)
+
 $(TARGET): $(OBJ).o $(MAINOBJ).o
 	$(CXX) $(CXXFLAGS) -I$(INCLUDE_DIR) $(OBJ).o $(MAINOBJ).o -o $(TARGET)
 
