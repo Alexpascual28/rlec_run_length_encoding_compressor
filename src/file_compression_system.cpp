@@ -5,7 +5,11 @@
 // CONSTRUCTOR
 Compressor::Compressor() {}
 
-// Returns the compressed version of the input string using the Run-Length Encoding algorithm
+/** 
+  * @brief Returns the compressed version of the input string using the Run-Length Encoding algorithm
+  * @param input: The input string
+  * @returns The compressed string
+*/
 std::string Compressor::compress(const std::string& input) {
     std::string output = "";
 
@@ -36,7 +40,11 @@ std::string Compressor::compress(const std::string& input) {
     return output;
 }
 
-// Returns the decompressed version of the input string using the Run-Length Encoding algorithm
+/** 
+  * @brief Returns the decompressed version of the input string using the Run-Length Encoding algorithm
+  * @param input: The compressed string
+  * @returns The decompressed string
+*/
 std::string Compressor::decompress(const std::string& input) {
     std::string output = "";
 
